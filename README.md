@@ -1,16 +1,52 @@
-# mercenary
 
-A new Flutter project.
+# Onboarding Guide
 
-## Getting Started
+Welcome to this flutter getx, dio and shared preference boilerplate
 
-This project is a starting point for a Flutter application.
+## 🛠️ Setup Instructions
 
-A few resources to get you started if this is your first Flutter project:
+1.  **Configure Environment Variables**  
+    Adjust your `.envied` file with the appropriate environment variables.
+    
+2.  **Install Requirements**  
+    Make sure the following are installed and properly set up:
+    
+    -   Flutter SDK
+        
+    -   Dart SDK (usually comes with Flutter)
+        
+    -   Java Development Kit (JDK)
+        
+    -   Android Emulator / iOS Simulator
+        
+    -   Xcode (for iOS development)
+        
+    -   Android Studio (or your preferred IDE)
+        
+3.  **Clean & Get Packages**
+    
+    ```bash
+    flutter clean
+    flutter pub get
+    
+    ```
+    
+4.  **Run Code Generation**
+    For generating encrypted env data in `/lib/env` folder
+    
+    ```bash
+    dart run build_runner build --delete-conflicting-outputs
+    
+    ```
+    
+5.  **(Optional) Fix Gradle Issues**  
+    If you run into Gradle issues during build or run:
+    
+    ```bash
+    cd android
+    ./gradlew clean
+    
+    ```
+    
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Happy coding! ✨
