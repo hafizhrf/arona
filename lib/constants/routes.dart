@@ -4,7 +4,7 @@ import 'package:mercenary/modules/homepage/pages/home_page.dart';
 
 typedef GetPageBuilder = Widget Function();
 
-Route HOME_PAGE = Route(path: '/home', page: () => const HomePage());
+Route HOME_PAGE = Route(path: '/home', page: () => HomePage());
 
 class Route {
   final String path;

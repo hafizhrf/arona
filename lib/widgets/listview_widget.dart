@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:mercenary/constants/colors.dart';
 
-class Listview extends StatelessWidget {
-  const Listview({
+class ListviewWidget extends StatelessWidget {
+  const ListviewWidget({
     super.key,
     this.prefixWidget,
     required this.title,
@@ -39,18 +39,24 @@ class Listview extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      title,
-                      style: titleStyle ?? const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-                    ),
-                    Text(
-                      subtitle ?? '',
-                      style: subtitleStyle ?? const TextStyle(fontSize: 16),
-                    ),
-                  ],
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        title,
+                        style: titleStyle ?? const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                        overflow: TextOverflow.ellipsis,
+                        maxLines: 1,
+                      ),
+                      Text(
+                        subtitle ?? '',
+                        style: subtitleStyle ?? const TextStyle(fontSize: 16),
+                        overflow: TextOverflow.ellipsis,
+                        maxLines: 1,
+                      ),
+                    ],
+                  ),
                 ),
                 if (showIcon)
                   const Icon(

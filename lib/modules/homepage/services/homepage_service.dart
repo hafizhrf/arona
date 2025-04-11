@@ -1,12 +1,16 @@
 import 'dart:async';
+import 'package:dio/dio.dart';
 import 'package:mercenary/helpers/dev_print.dart';
+import 'package:mercenary/helpers/utils/api.dart';
 
 class HomepageService {
-  Future<Map?> getHomepageData({String? query}) async {
+  Future<List?> getHomepageData({String? query}) async {
     try {
-      await Future.delayed(const Duration(seconds: 2));
-
-      return {'status': 'success', 'data': 'dummy data'};
+      Response<Map<String, dynamic>> response = await dio.get('/todos');
+      if (response.data != null && response.data!['todos'] != null) {
+        return response.data!['todos'];
+      }
+      return null;
     } catch (e) {
       devPrint(e);
       return null;

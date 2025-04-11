@@ -54,7 +54,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      builder: EasyLoading.init(),
       locale: const Locale('id'),
       getPages: pages(),
       theme: ThemeData(
@@ -78,6 +77,7 @@ class MyApp extends StatelessWidget {
         unselectedWidgetColor: Colors.grey[300],
       ),
       initialBinding: InitialBindings(),
+      builder: EasyLoading.init(),
       // initialRoute: sharedPrefs.getUserLoginData() == null ? LOGIN_PAGE.path : HOME_PAGE.path,
       initialRoute: HOME_PAGE.path,
     );
