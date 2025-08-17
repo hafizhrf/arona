@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
-import 'package:mercenary/env/env.dart';
-import 'package:mercenary/helpers/utils/logging_interceptor.dart';
+import 'package:arona/env/env.dart';
+import 'package:arona/helpers/utils/logging_interceptor.dart';
 
 class Api {
   final dio = createDio();

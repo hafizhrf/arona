@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mercenary/constants/colors.dart';
+import 'package:arona/constants/colors.dart';
 
 class EmptyLoading extends StatelessWidget {
   const EmptyLoading({super.key});

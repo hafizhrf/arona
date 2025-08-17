@@ -1,6 +1,6 @@
 // ignore_for_file: non_constant_identifier_names
 import 'package:flutter/material.dart';
-import 'package:mercenary/modules/homepage/pages/home_page.dart';
+import 'package:arona/modules/homepage/pages/home_page.dart';
 
 typedef GetPageBuilder = Widget Function();
 

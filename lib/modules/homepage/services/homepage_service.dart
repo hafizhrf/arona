@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:dio/dio.dart';
-import 'package:mercenary/helpers/dev_print.dart';
-import 'package:mercenary/helpers/utils/api.dart';
+import 'package:arona/helpers/dev_print.dart';
+import 'package:arona/helpers/utils/api.dart';
 
 class HomepageService {
   Future<List?> getHomepageData({String? query}) async {

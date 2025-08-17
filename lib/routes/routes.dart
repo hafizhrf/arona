@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:mercenary/constants/routes.dart';
+import 'package:arona/constants/routes.dart';
 
 List<GetPage> routes = [
   GetPage(

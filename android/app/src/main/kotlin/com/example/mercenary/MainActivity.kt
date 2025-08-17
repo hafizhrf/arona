@@ -1,4 +1,4 @@
-package com.mercenary.app
+package com.arona.app
 
 import io.flutter.embedding.android.FlutterActivity
 

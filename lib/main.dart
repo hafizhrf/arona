@@ -5,11 +5,11 @@ import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:intl/intl.dart';
-import 'package:mercenary/bindings/initial_binding.dart';
-import 'package:mercenary/constants/colors.dart';
-import 'package:mercenary/constants/routes.dart';
-import 'package:mercenary/helpers/shared_preferences.dart';
-import 'package:mercenary/routes/routes.dart';
+import 'package:arona/bindings/initial_binding.dart';
+import 'package:arona/constants/colors.dart';
+import 'package:arona/constants/routes.dart';
+import 'package:arona/helpers/shared_preferences.dart';
+import 'package:arona/routes/routes.dart';
 // import 'firebase_options.dart';
 
 Future<void> main() async {

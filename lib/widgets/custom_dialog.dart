@@ -1,9 +1,9 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mercenary/constants/colors.dart';
-import 'package:mercenary/widgets/button_widget.dart';
-import 'package:mercenary/widgets/label.dart';
+import 'package:arona/constants/colors.dart';
+import 'package:arona/widgets/button_widget.dart';
+import 'package:arona/widgets/label.dart';
 
 class CustomDialog extends StatelessWidget {
   final String? title;

@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
-import 'package:mercenary/modules/homepage/controllers/homepage_controller.dart';
-import 'package:mercenary/modules/homepage/services/homepage_service.dart';
+import 'package:arona/modules/homepage/controllers/homepage_controller.dart';
+import 'package:arona/modules/homepage/services/homepage_service.dart';
 
 class InitialBindings implements Bindings {
   @override

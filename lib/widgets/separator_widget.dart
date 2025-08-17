@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mercenary/constants/colors.dart';
+import 'package:arona/constants/colors.dart';
 
 class Separator extends StatelessWidget {
   const Separator(
